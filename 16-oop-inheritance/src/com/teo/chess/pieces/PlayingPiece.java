@@ -17,4 +17,8 @@ public class PlayingPiece {
     public char getSymbol() {
         return symbol;
     }
+
+    public boolean isMoveLegal(int currentCol, int currentRow, int newCol, int newRow) {
+        return false;
+    }
 }
