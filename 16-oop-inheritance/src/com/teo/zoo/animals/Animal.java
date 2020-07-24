@@ -3,7 +3,7 @@ package com.teo.zoo.animals;
 import com.teo.zoo.Breed;
 import com.teo.zoo.Sex;
 
-public class Animal {
+public abstract class Animal {
 
     protected Breed breed;
     protected int age;
@@ -24,9 +24,7 @@ public class Animal {
         return breed;
     }
 
-    public void makeSound() {
-        System.out.println("asdf");
-    }
+    public abstract void makeSound();
 
     public int getAge() {
         return age;

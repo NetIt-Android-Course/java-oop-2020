@@ -51,4 +51,9 @@ public class Worker extends Human {
     public String toString() {
         return "Worker:" + getName() + " " + getFamilyName() + " " + getCostPerHour();
     }
+
+    @Override
+    public void work() {
+        System.out.println("work work");
+    }
 }

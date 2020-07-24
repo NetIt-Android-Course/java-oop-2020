@@ -1,6 +1,6 @@
 package com.teo.duck_simulator.ducks;
 
-public class Duck {
+public abstract class Duck {
 
     public String duckType = "no_type";
 
@@ -8,7 +8,4 @@ public class Duck {
         System.out.println("splash splash : 10 km/h");
     }
 
-    public void fly() {
-        System.out.println("fiuuuu : 20km/h");
-    }
 }

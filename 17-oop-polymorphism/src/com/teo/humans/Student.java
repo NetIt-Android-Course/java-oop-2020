@@ -7,4 +7,9 @@ public class Student extends Human {
     public Student(String name, String familyName) {
         super(name, familyName);
     }
+
+    @Override
+    protected void work() {
+        System.out.println("does not work");
+    }
 }

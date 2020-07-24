@@ -1,6 +1,6 @@
 package com.teo.humans;
 
-public class Human {
+public abstract class Human {
 
     private final String name;
     private final String familyName;
@@ -17,4 +17,6 @@ public class Human {
     public String getFamilyName() {
         return familyName;
     }
+
+    protected abstract void work();
 }

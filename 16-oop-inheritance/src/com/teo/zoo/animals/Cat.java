@@ -26,4 +26,9 @@ public class Cat extends Animal {
             numberOfLivesLeft--;
         }
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println("meow");
+    }
 }

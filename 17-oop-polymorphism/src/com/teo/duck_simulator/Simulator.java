@@ -1,9 +1,6 @@
 package com.teo.duck_simulator;
 
-import com.teo.duck_simulator.ducks.BrownDuck;
-import com.teo.duck_simulator.ducks.Duck;
-import com.teo.duck_simulator.ducks.MallardDuck;
-import com.teo.duck_simulator.ducks.RubberDuck;
+import com.teo.duck_simulator.ducks.*;
 
 public class Simulator {
 
@@ -25,7 +22,9 @@ public class Simulator {
         //for-each loop
         for(Duck d : ducks) {
             d.swim();
-            d.fly();
+            if(d instanceof CanFly) {
+                ((CanFly) d).fly();
+            }
             System.out.println(d.duckType);
         }
 

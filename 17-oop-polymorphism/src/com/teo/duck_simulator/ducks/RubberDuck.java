@@ -11,10 +11,4 @@ public class RubberDuck extends Duck {
     public void swim() {
         System.out.println("splash splash : 0 km/h");
     }
-
-    @Override
-    public void fly() {
-        super.fly();
-        System.out.println("cannot fly");
-    }
 }

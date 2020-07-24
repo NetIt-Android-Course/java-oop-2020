@@ -1,6 +1,6 @@
 package com.teo.chess.pieces;
 
-public class PlayingPiece {
+public abstract class PlayingPiece {
 
     private PieceColor color;
     private char symbol;
@@ -18,7 +18,5 @@ public class PlayingPiece {
         return symbol;
     }
 
-    public boolean isMoveLegal(int currentCol, int currentRow, int newCol, int newRow) {
-        return false;
-    }
+    public abstract boolean isMoveLegal(int currentCol, int currentRow, int newCol, int newRow);
 }

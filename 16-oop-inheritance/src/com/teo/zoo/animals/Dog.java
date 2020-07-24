@@ -29,4 +29,9 @@ public class Dog extends Animal {
     public int getUniqueDogNumber() {
         return uniqueDogNumber;
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println("bau");
+    }
 }
