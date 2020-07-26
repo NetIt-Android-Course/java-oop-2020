@@ -1,6 +1,8 @@
 package com.teo.data.models;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class DailyReport {
 
@@ -24,7 +26,19 @@ public class DailyReport {
         return timeSpentPerClient.get(client);
     }
 
-    public SimpleDate getTimestamp() {
+    public SimpleDate getDate() {
         return reportDate;
+    }
+
+    public Set<Map.Entry<Client, Double>> getEntries() {
+        return timeSpentPerClient.entrySet();
+    }
+
+    public double getHoursWorked() {
+        double sum = 0;
+        for (Double hoursPerClient : timeSpentPerClient.values()) {
+            sum = sum + hoursPerClient;
+        }
+        return sum;
     }
 }

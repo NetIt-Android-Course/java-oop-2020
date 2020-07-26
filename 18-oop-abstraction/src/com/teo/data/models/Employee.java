@@ -1,7 +1,7 @@
 package com.teo.data.models;
 
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 
 public class Employee extends User {
 
@@ -23,7 +23,7 @@ public class Employee extends User {
         }
     }
 
-    public List<DailyReport> getReports() {
-        return (List<DailyReport>) reports.values();
+    public Collection<DailyReport> getReports() {
+        return reports.values();
     }
 }

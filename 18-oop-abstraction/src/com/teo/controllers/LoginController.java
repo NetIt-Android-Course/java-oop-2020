@@ -1,30 +1,31 @@
-package com.teo;
+package com.teo.controllers;
 
 import com.teo.io.IODevice;
 import com.teo.services.AuthenticationService;
 
-public class Controller {
+public class LoginController implements Controller {
 
-    private AuthenticationService authenticationService;
-    private IODevice ioDevice;
+    private final AuthenticationService authenticationService;
+    private final IODevice ioDevice;
 
-    public Controller(IODevice ioDevice) {
+    public LoginController(IODevice ioDevice, AuthenticationService authenticationService) {
         this.ioDevice = ioDevice;
-        this.authenticationService = new AuthenticationService();
-        startProgram();
+        this.authenticationService = authenticationService;
     }
 
-    private void startProgram() {
+    @Override
+    public void start() {
         login();
         if(authenticationService.isUserAdmin()) {
-            ioDevice.showAdminOptions();
+            NavigationController.getInstance(ioDevice).startAdmin();
         } else {
-            //TODO show empl options
+            NavigationController.getInstance(ioDevice).startEmployee();
         }
     }
 
     private void login() {
         while (!authenticationService.isUserLogged()) {
+            ioDevice.showLoginMessage();
             String username = ioDevice.getUsernameFromUser();
             String password = ioDevice.getPasswordFromUser();
             if(!authenticationService.requestAuthentication(username, password)) {

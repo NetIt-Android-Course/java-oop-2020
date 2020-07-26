@@ -14,6 +14,13 @@ public class AuthenticationService {
         this.userRepository = UserRepository.getInstance();
     }
 
+    /**
+     * Checks if user with such username exists and compares its password with the provided password.
+     * Logged user is remembered in the loggedUser field.
+     * @param username provided username
+     * @param password password for the provided username
+     * @return true if user exists and password matches and false otherwise
+     */
     public boolean requestAuthentication(String username, String password) {
         if(isValid(username) && isValid(password)) {
             User user = userRepository.getUserByUsername(username);
@@ -40,5 +47,9 @@ public class AuthenticationService {
 
     private boolean isValid(String text) {
         return text != null && !text.isEmpty();
+    }
+
+    public User getLoggedUser() {
+        return loggedUser;
     }
 }
