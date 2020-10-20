@@ -24,9 +24,6 @@ public class TriangleTest {
 
     @Test(timeout = 2)
     public void testCalculatePerimeterWhenSidesNegativeAndNonZeroThenZero() {
-
-        //test
-        
         Triangle triangle = new Triangle(-3, 4, 5);
         double expected = 0;
         double actual = triangle.calculatePerimeter();
