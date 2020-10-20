@@ -1,6 +1,6 @@
 package shapes;
 
-public class Circle {
+public class Circle implements Shape {
     private int radius;
 
     public Circle(int radius) {
@@ -8,14 +8,16 @@ public class Circle {
     }
 
     public int findDiameter() {
-        return 4 * radius;
+        return 2 * radius;
     }
 
+    @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
 
+    @Override
     public double calculatePerimeter() {
-        return 2 * 3.14 * radius;
+        return 2 * Math.PI * radius;
     }
 }

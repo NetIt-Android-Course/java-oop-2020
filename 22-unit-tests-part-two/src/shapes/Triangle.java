@@ -1,6 +1,6 @@
 package shapes;
 
-public class Triangle {
+public class Triangle implements Shape {
 
     int aSide;
     int bSide;
@@ -12,6 +12,7 @@ public class Triangle {
         this.cSide = cSide;
     }
 
+    @Override
     public double calculateArea() {
         double halfPerimeter = this.calculatePerimeter() * 1.0 / 2;
         //we are using the Heron formula
@@ -19,6 +20,7 @@ public class Triangle {
                 (halfPerimeter - bSide) * (halfPerimeter - cSide));
     }
 
+    @Override
     public double calculatePerimeter() {
         return exists() ? aSide + bSide + cSide : 0;
     }
@@ -28,7 +30,7 @@ public class Triangle {
     }
 
     public boolean isIsosceles() {
-        return aSide == bSide && aSide == cSide && bSide == cSide;
+        return aSide == bSide || aSide == cSide || bSide == cSide;
     }
 
     public boolean isRight() {

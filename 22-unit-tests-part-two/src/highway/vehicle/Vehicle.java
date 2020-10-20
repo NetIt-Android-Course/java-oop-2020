@@ -14,4 +14,6 @@ public interface Vehicle {
     void stop();
 
     boolean doesItMove();
+
+    double getTax();
 }

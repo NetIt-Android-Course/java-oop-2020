@@ -1,7 +1,5 @@
 package highway;
 
-import highway.vehicle.Car;
-import highway.vehicle.Motorbike;
 import highway.vehicle.Vehicle;
 
 import java.util.ArrayList;
@@ -9,7 +7,7 @@ import java.util.Collection;
 
 public class Highway {
 
-    Collection<Vehicle> vehiclesOnHighway;
+    private Collection<Vehicle> vehiclesOnHighway;
     private double taxGathered;
 
     public Highway() {
@@ -19,13 +17,11 @@ public class Highway {
 
     public void addNewVehicle(Vehicle vehicle) {
         this.vehiclesOnHighway.add(vehicle);
+        taxGathered += vehicle.getTax();
+    }
 
-        if (vehicle instanceof Car) {
-            taxGathered += vehicle.getHorsepower() * 0.2;
-        }
-        if (vehicle instanceof Motorbike) {
-            taxGathered += vehicle.getHorsepower() * 0.1;
-        }
+    public double getTaxGathered() {
+        return taxGathered;
     }
 
     public void removeVehicle(Vehicle vehicle) {

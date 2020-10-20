@@ -1,43 +1,18 @@
 package highway.vehicle;
 
-public class Motorbike implements Vehicle {
+public class Motorbike extends VehicleBase {
 
-    private String registrationNumber;
-    private int speed;
-    private int horsepower;
     private boolean isHelmetOn;
 
     public Motorbike(String registrationNumber, int horsepower) {
-        this.registrationNumber = registrationNumber;
-        this.speed = 0;
-        this.horsepower = horsepower;
+        super(registrationNumber, horsepower);
         this.isHelmetOn = false;
-    }
-
-    @Override
-    public int getSpeed() {
-        return speed;
-    }
-
-    @Override
-    public int getHorsepower() {
-        return horsepower;
     }
 
     @Override
     public void start() {
         this.isHelmetOn = true;
         this.speed = 20;
-    }
-
-    @Override
-    public int increaseSpeed(int kph) {
-        return this.speed += kph;
-    }
-
-    @Override
-    public int decreaseSpeed(int kph) {
-        return this.speed -= kph;
     }
 
     @Override
@@ -48,5 +23,10 @@ public class Motorbike implements Vehicle {
     @Override
     public boolean doesItMove() {
         return this.speed > 0;
+    }
+
+    @Override
+    public double getTax() {
+        return getHorsepower() * 0.1;
     }
 }

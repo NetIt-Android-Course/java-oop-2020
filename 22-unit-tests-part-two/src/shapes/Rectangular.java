@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangular {
+public class Rectangular implements Shape {
     private int aSide;
     private int bSide;
 
@@ -9,21 +9,27 @@ public class Rectangular {
         this.bSide = bSide;
     }
 
+    @Override
     public double calculateArea() {
         return aSide * bSide;
     }
 
+    @Override
     public double calculatePerimeter() {
-        return 2 * aSide;
+        return exists() ? 2 * (aSide + bSide) : 0;
     }
 
     public boolean isSquare() {
-        return aSide == aSide;
+        return aSide == bSide;
     }
 
     public double calculateDiagonal() {
         //we can use the Pythagorean theorem
         return Math.sqrt((aSide * aSide) + (bSide * bSide));
+    }
+
+    public boolean exists() {
+        return aSide > 0 && bSide > 0;
     }
 
 }

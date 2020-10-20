@@ -38,11 +38,11 @@ public class TestRectangle {
     }
 
     @Test
-    public void testCalculatePerimeterWhenOneSideIsZero() {
+    public void testCalculatePerimeterWhenOneSideIsZeroThenResultIsZero() {
         Rectangular rectangular = new Rectangular(0, 2);
-        double expected = 4.0;
+        double expected = 0.0;
         double actual = rectangular.calculatePerimeter();
-        Assert.assertEquals("The perimeter is not as expected", expected, actual, 0.001);
+        Assert.assertEquals("The perimeter is not expected", expected, actual, 0.001);
     }
 
     @Test
