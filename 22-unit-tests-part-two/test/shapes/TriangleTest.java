@@ -62,23 +62,31 @@ public class TriangleTest {
     }
 
     @Test
-    public void testIsIsoscelesWhenTwoSidesAreEqualThenTrue(){
+    public void testIsIsoscelesWhenTwoSidesAreEqualThenTrue() {
         Triangle triangle = new Triangle(4, 4, 7);
 
         Assert.assertTrue("Triangle should be isosceles.", triangle.isIsosceles());
     }
 
     @Test
-    public void testIsIsoscelesWhenOtherTwoSidesAreEqualThenTrue(){
+    public void testIsIsoscelesWhenOtherTwoSidesAreEqualThenTrue() {
         Triangle triangle = new Triangle(7, 4, 4);
 
         Assert.assertTrue("Triangle should be isosceles.", triangle.isIsosceles());
     }
 
     @Test
-    public void testIsIsoscelesWhenAllSidesAreEqualThenTrue(){
+    public void testIsIsoscelesWhenAllSidesAreEqualThenTrue() {
         Triangle triangle = new Triangle(4, 4, 4);
 
         Assert.assertTrue("Triangle should be isosceles.", triangle.isIsosceles());
+    }
+
+    // този ми го дава грешен и не разбирам защо?
+
+    @Test
+    public void testIsRightWhenAllSidesAreSameThenTrue() {
+        Triangle triangle = new Triangle(5, 5, 5);
+        Assert.assertTrue("Triangle isn't right", triangle.isRight());
     }
 }

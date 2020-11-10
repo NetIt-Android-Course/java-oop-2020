@@ -32,7 +32,7 @@
       <recent name="highway" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HighwayTest.testGetTaxWhenCarAddedThenTaxIsPositive">
+  <component name="RunManager" selected="JUnit.TriangleTest.testIsRightWhenAllSidesAreSameThenTrue">
     <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="22-unit-tests-part-two" />
       <extension name="coverage">
@@ -95,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTest.testIsIsoscelesWhenOtherTwoSidesAreEqualThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TriangleTest.testIsRightWhenAllSidesAreSameThenTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="22-unit-tests-part-two" />
       <extension name="coverage">
         <pattern>
@@ -105,7 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="shapes" />
       <option name="MAIN_CLASS_NAME" value="shapes.TriangleTest" />
-      <option name="METHOD_NAME" value="testIsIsoscelesWhenOtherTwoSidesAreEqualThenTrue" />
+      <option name="METHOD_NAME" value="testIsRightWhenAllSidesAreSameThenTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTest.testIsRightWhenAllSidesAreSameThenTrue" />
         <item itemvalue="JUnit.HighwayTest.testGetTaxWhenCarAddedThenTaxIsPositive" />
         <item itemvalue="JUnit.CarTest" />
         <item itemvalue="JUnit.TriangleTest" />
         <item itemvalue="JUnit.TriangleTest.testIsIsoscelesWhenAllSidesAreEqualThenTrue" />
-        <item itemvalue="JUnit.TriangleTest.testIsIsoscelesWhenOtherTwoSidesAreEqualThenTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -145,25 +145,33 @@
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="553" y="330" width="430" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.920@0.0.1536.920" timestamp="1603217586456" />
-    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1603217792801">
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1605044722802">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.920@0.0.1536.920" timestamp="1603217792801" />
-    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1603217792801">
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.920/3840.0.1920.1040@0.0.1536.920" timestamp="1605044722802" />
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.920@0.0.1536.920" timestamp="1603219306481" />
+    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1605044722802">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.920@0.0.1536.920" timestamp="1603217792801" />
-    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1603217792801">
+    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.920/3840.0.1920.1040@0.0.1536.920" timestamp="1605044722802" />
+    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.920@0.0.1536.920" timestamp="1603219306480" />
+    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1605044722802">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.920@0.0.1536.920" timestamp="1603217792801" />
-    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1603217792801">
+    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.920/3840.0.1920.1040@0.0.1536.920" timestamp="1605044722802" />
+    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.920@0.0.1536.920" timestamp="1603219306480" />
+    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1605044722802">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.920@0.0.1536.920" timestamp="1603217792801" />
+    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.920/3840.0.1920.1040@0.0.1536.920" timestamp="1605044722802" />
+    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.920@0.0.1536.920" timestamp="1603219306481" />
     <state x="498" y="353" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603208911626">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="498" y="353" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.920@0.0.1536.920" timestamp="1603208911626" />
+    <state x="203" y="81" key="new project wizard" timestamp="1605026864746">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="203" y="81" key="new project wizard/0.0.1536.920/3840.0.1920.1040@0.0.1536.920" timestamp="1605026864746" />
   </component>
 </project>

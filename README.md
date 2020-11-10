@@ -43,10 +43,7 @@ All presentations can be found [HERE](https://github.com/NetIt-Android-Course/ja
 
 ## Videos
 
-| Lecture | Video | 
-|---------|:-----|
-| OOP Basics | [Video]() |
-
+You can find the videos on the NET IT website or [HERE](https://drive.google.com/drive/u/0/folders/1aZNhGCgyt1_JusLATkiaoLHzdRk7dVla)
 
 ## Tutorials
 
