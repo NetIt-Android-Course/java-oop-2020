@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="969a1f3b-1ae2-48d2-a79f-ff119c7d6749" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1kNhzbVVb6sMUZY24jE1KgJoskF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.netit.Main" />
+      <module name="25-text-files-generics" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="969a1f3b-1ae2-48d2-a79f-ff119c7d6749" name="Default Changelist" comment="" />
+      <created>1605547222044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605547222044</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1605555943007">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.920@0.0.1536.920" timestamp="1605555943007" />
+    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1605555943007">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.920@0.0.1536.920" timestamp="1605555943007" />
+    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1605555943006">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.920@0.0.1536.920" timestamp="1605555943006" />
+    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1605555943007">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.920@0.0.1536.920" timestamp="1605555943007" />
+    <state x="380" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605549126995">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="380" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.920@0.0.1536.920" timestamp="1605549126995" />
+    <state x="316" y="197" width="904" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605547514210">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="316" y="197" width="904" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.920@0.0.1536.920" timestamp="1605547514210" />
+    <state x="500" y="221" key="extract.method.dialog" timestamp="1605549674700">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="500" y="221" key="extract.method.dialog/0.0.1536.920@0.0.1536.920" timestamp="1605549674700" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

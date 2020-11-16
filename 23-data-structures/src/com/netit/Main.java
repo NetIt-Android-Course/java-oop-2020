@@ -1,5 +1,6 @@
 package com.netit;
 
+import com.netit.custom_structures.MyGenericList;
 import com.netit.custom_structures.MyLinkedStringList;
 import com.netit.custom_structures.MyStringList;
 import com.netit.todo.Todo;
@@ -12,6 +13,19 @@ import java.util.Vector;
 public class Main {
 
     public static void main(String[] args) {
+//        testInternalAlgorithms();
+        MyGenericList<Float> list = new MyGenericList<>();
+        list.add(3.4f);
+        list.add(4f);
+        list.add(5.5f);
+        System.out.println(list.sum());
+
+//        MyGenericList objList = new MyGenericList();
+//        objList.add(new Todo());
+//        String o = (String) objList.get(0);
+    }
+
+    private static void testInternalAlgorithms() {
         List<String> texts = new ArrayList<>();
 
         texts.add("bla");
