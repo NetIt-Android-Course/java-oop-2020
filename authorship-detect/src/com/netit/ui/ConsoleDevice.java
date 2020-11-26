@@ -13,7 +13,7 @@ public class ConsoleDevice implements IODevice {
     public String[] getTextsFromUser(int numberOfTexts) {
         String[] texts = new String[numberOfTexts];
         for (int i = 0; i < numberOfTexts; i++) {
-            texts[i] = new Scanner(System.in).next();
+            texts[i] = new Scanner(System.in).nextLine();
         }
         return texts;
     }

@@ -1,5 +1,6 @@
 package com.netit.core;
 
+import com.netit.data.TextSignature;
 import com.netit.ui.IODevice;
 
 public class Manager {
@@ -15,7 +16,8 @@ public class Manager {
         String[] texts = ioDevice.getTextsFromUser(textCount);
 
         //calc
+        TextSignature textSignature = new TextSignature(texts[0]);
 
-        ioDevice.showResultToUser("result");
+        ioDevice.showResultToUser("result: " + textSignature.getAverageWordLength());
     }
 }
